@@ -1,1 +1,1 @@
-# MRI-based-glioma-neuropathology-prediction-deep-learning-system-MRI-GNP-
+# MRI-based deep learning for neuropathology prediction in adult-type diffuse glioma
