@@ -1,0 +1,29 @@
+                tiantan_duofenzi: 868 in total, yes=446, no=422
+                         ivy_gap: 21 in total, yes=3, no=18
+               tiantan_2007-2107: 545 in total, yes=302, no=243
+                    tiantan_cgga: 79 in total, yes=39, no=40
+                        ucsfpdgm: 501 in total, yes=103, no=398
+                tiantan_dongzong: 129 in total, yes=50, no=79
+                   tiantan_anhui: 74 in total, yes=25, no=49
+                    tiantan_3000: 2329 in total, yes=1533, no=796
+                tiantan_cgga_new: 161 in total, yes=115, no=46
+                  tiantan_new_OS: 953 in total, yes=283, no=670
+                     tiantan_pro: 478 in total, yes=247, no=231
+             tiantan_yuhuangding: 46 in total, yes=13, no=33
+             tiantan_landaeryuan: 18 in total, yes=8, no=10
+                           upenn: 565 in total, yes=19, no=546
+                  tiantan_huanhu: 8 in total, yes=4, no=4
+              tiantan_sanbonaoke: 66 in total, yes=23, no=43
+             tiantan_fujianxiehe: 184 in total, yes=76, no=108
+                            tcga: 211 in total, yes=101, no=110
+                tiantan_nanchang: 19 in total, yes=10, no=9
+       tiantan_shandongyingxiang: 76 in total, yes=24, no=52
+           tiantan_guangzhoudiyi: 34 in total, yes=16, no=18
+
+(train)
+                    tiantan_cgga: 79 in total, yes=39, no=40
+                tiantan_cgga_new: 161 in total, yes=115, no=46
+                tiantan_duofenzi: 868 in total, yes=446, no=422
+                  tiantan_new_OS: 953 in total, yes=283, no=670
+               tiantan_2007-2107: 545 in total, yes=302, no=243
+                    tiantan_3000: 1400 in total, yes=900, no=500

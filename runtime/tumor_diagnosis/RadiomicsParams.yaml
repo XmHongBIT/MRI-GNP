@@ -1,0 +1,26 @@
+featureClass:
+  firstorder: null
+  glcm: null
+  gldm: null
+  glrlm: null
+  glszm: null
+  ngtdm: null
+  shape: null
+imageType:
+  Exponential: {}
+  Gradient: {}
+  LBP3D: {}
+  LoG: {}
+  Logarithm: {}
+  Original: {}
+  Square: {}
+  SquareRoot: {}
+  Wavelet: {}
+setting:
+  binWidth: 50
+  geometryTolerance: 0.0001
+  interpolator: sitkBSpline
+  label: 1
+  normalize: True
+  resampledPixelSpacing: null
+  weightingNorm: null
