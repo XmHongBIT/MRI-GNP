@@ -1,9 +1,5 @@
 # Instruction
 
-Okay, here is a complete English README.md for your project, "MRI-based deep learning system for noninvasive neuropathological profiling of adult-type diffuse glioma."
-
-This version is designed to be clear, professional, and easy for both clinicians and technical users to understand.
-
 MRI-GNP: An MRI-Based Deep Learning System for Noninvasive Neuropathological Profiling of Adult-Type Diffuse Glioma
 MRI-GNP (MRI-based Glioma Neuropathology Prediction) is a state-of-the-art deep learning system designed for the noninvasive, preoperative prediction of neuropathological features in adult-type diffuse gliomas (ADGs) using standard MRI scans. This system provides critical diagnostic information to neurosurgeons and neuro-oncologists, aiding in personalized treatment planning.
 
