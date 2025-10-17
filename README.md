@@ -71,4 +71,4 @@ If you use MRI-GNP in your research, please cite our paper:
 ```
 
 ## License (Placeholder)
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE.txt).
