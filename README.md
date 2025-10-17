@@ -57,7 +57,6 @@ cd MRI-GNP
 # Install dependencies
 pip install -r requirements.txt
 
-Please refer to the documentation in the docs/ folder for detailed instructions on usage and examples.
 ```
 ## How to Contribute (Placeholder)
 
