@@ -43,7 +43,7 @@ MRI-GNP is a powerful tool with strong potential to enhance patient care by:
 * **Guiding Treatment Planning**: Assisting clinicians in tailoring personalized treatment strategies, including surgical extent, radiation, and chemotherapy regimens.
 * **Supporting Clinical Decision-Making**: Empowering clinical teams with reliable, data-driven insights to support complex decision-making processes and improve patient outcomes.
 
-## Installation & Usage (Placeholder)
+## Installation & Usage 
 
 To get started with MRI-GNP, clone the repository and install the required dependencies.
 
@@ -58,11 +58,11 @@ cd MRI-GNP
 pip install -r requirements.txt
 
 ```
-## How to Contribute (Placeholder)
+## How to Contribute
 
 We welcome contributions of all kinds! If you are interested in improving MRI-GNP, please feel free to fork the repository, submit a pull request, or open an issue.
 
-## Citation (Placeholder)
+## Citation 
 
 If you find this work useful in your research, please consider citing our preprint:
 ```bash
