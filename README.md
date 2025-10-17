@@ -1,4 +1,4 @@
-# MRI-GNP: MRI-based Glioma Neuropathology Prediction
+# MRI-GNP: MRI-based Glioma Neuropathology Prediction Deep Learning System
 
 
 
