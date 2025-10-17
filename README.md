@@ -1,8 +1,6 @@
 # MRI-GNP: MRI-based Glioma Neuropathology Prediction
 
-[![GitHub repo size](https://img.shields.io/github/repo-size/your-username/your-repo)](https://github.com/your-username/your-repo)
-[![GitHub stars](https://img.shields.io/github/stars/your-username/your-repo?style=social)](https://github.com/your-username/your-repo)
-[![GitHub forks](https://img.shields.io/github/forks/your-username/your-repo?style=social)](https://github.com/your-username/your-repo)
+
 
 **MRI-GNP (MRI-based Glioma Neuropathology Prediction)** is a state-of-the-art deep learning system designed for the non-invasive, preoperative prediction of neuropathological features in adult-type diffuse gliomas (ADGs) using standard MR images.
 
@@ -51,7 +49,7 @@ To get started with MRI-GNP, clone the repository and install the required depen
 
 ```bash
 # Clone this repository
-git clone [https://github.com/your-username/MRI-GNP.git](https://github.com/your-username/MRI-GNP.git)
+git clone [https://https://github.com/XmHongBIT/MRI-GNP.git](https://github.com/XmHongBIT/MRI-GNP.git)
 
 # Navigate to the project directory
 cd MRI-GNP
