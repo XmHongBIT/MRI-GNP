@@ -49,7 +49,7 @@ To get started with MRI-GNP, clone the repository and install the required depen
 
 ```bash
 # Clone this repository
-git clone [https://https://github.com/XmHongBIT/MRI-GNP.git](https://github.com/XmHongBIT/MRI-GNP.git)
+git clone https://https://github.com/XmHongBIT/MRI-GNP.git
 
 # Navigate to the project directory
 cd MRI-GNP
