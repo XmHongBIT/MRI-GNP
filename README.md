@@ -60,12 +60,15 @@ pip install -r requirements.txt
 Please refer to the documentation in the docs/ folder for detailed instructions on usage and examples.
 ```
 ## How to Contribute (Placeholder)
+
 We welcome contributions of all kinds! If you are interested in improving MRI-GNP, please feel free to fork the repository, submit a pull request, or open an issue.
 
 ## Citation (Placeholder)
-If you use MRI-GNP in your research, please cite our paper:
 
+If you use MRI-GNP in your research, please cite our paper:
+```bash
 [Still under review]
+```
 
 ## License (Placeholder)
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](LICENSE).
