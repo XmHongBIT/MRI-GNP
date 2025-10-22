@@ -64,7 +64,7 @@ We welcome contributions of all kinds! If you are interested in improving MRI-GN
 
 ## Citation 
 
-If you find this work useful in your research, please consider citing our preprint:
+If you find this work useful in your research, please consider citing our preprint!
 ```bash
 @article{mri_gnp_preprint_2025,
   title={{MRI-Based Deep Learning System for Noninvasive Neuropathological Profiling of Adult-Type Diffuse Glioma}},
@@ -75,5 +75,5 @@ If you find this work useful in your research, please consider citing our prepri
 }
 ```
 
-## License (Placeholder)
+## License
 This project is licensed under the [MIT License](LICENSE.txt).
