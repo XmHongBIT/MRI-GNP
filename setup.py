@@ -18,7 +18,7 @@ setup(
     description='',
     
     author=info_dict['__author__'],
-    author_email='chenghao1652@126.com, 3120215380@bit.edu.cn',
+    author_email='xiaoming.h@bit.edu.cn,chenghao1652@126.com',
     
     # need Python > 3.5, because os.mkdir(...) is not thread-safe before this version
     # Python 3.7 just works fine.
@@ -50,3 +50,4 @@ setup(
     keywords=[''
     ]
 )
+
