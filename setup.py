@@ -12,7 +12,7 @@ exec(open('digicare/pkginfo.py').read(), info_dict)
 
 setup(
     name='digicare',
-    packages=find_namespace_packages(include=["digicare", "digicare.*"]),
+    packages=find_namespace_packages(include=["MRI-GNP", "MRI-GNP.*"]),
     version=info_dict['__version__'],
     
     description='',
@@ -50,4 +50,5 @@ setup(
     keywords=[''
     ]
 )
+
 
