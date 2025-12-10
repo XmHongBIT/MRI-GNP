@@ -62,18 +62,6 @@ python setup.py
 
 We welcome contributions of all kinds! If you are interested in improving MRI-GNP, please feel free to fork the repository, submit a pull request, or open an issue.
 
-## Citation 
-
-If you find this work useful in your research, please consider citing our preprint!
-```bash
-@article{mri_gnp_preprint_2025,
-  title={{MRI-Based Deep Learning System for Noninvasive Neuropathological Profiling of Adult-Type Diffuse Glioma}},
-  author={Hong, Xiaoming and Li, Yangyang and Li, Yangyang and Xue, Yunjing and Xue, Yunjing and Yang, Ruimeng and Liu, Chenghao and Li, Junjie and Li, Junjie and Pang, Haowen and Shi, Dongli and Shi, Dongli and Liu, Zhaoxi and Liu, Zhaoxi and Qiu, Jun and Qiu, Jun and Jing, Ying and Jing, Ying and Mao, Yu and Mao, Yu and Xu, Siyao and Xu, Siyao and Huang, Xufang and Huang, Xufang and Hua, Tiantian and Hua, Tiantian and Duan, Yunyun and Wu, Minghao and Wu, Minghao and Wang, Jingxuan and Wang, Jingxuan and yuerong, Lizhu and Zhang, Xinru and Liu, Meichen and Jiang, Runze and Zhang, Peng and Barkhof, Frederik and Keil, Vera and Keil, Vera and Zhu, Mingwang and Zhu, Mingwang and Zhang, Zhiqiang and Li, Huan and Li, Huan and Qian, Yingfeng and Qian, Yingfeng and Ma, Heng and Ma, Heng and Li, Xiaodan and Li, Xiaodan and Xu, Rui and Xu, Rui and Zhang, Jing and Zhou, Fuqing and Guo, Jun and Chang, Qing and Zhang, Wei and Zhang, Renlong and Guo, Ya and Meng, Li and Meng, Li and Wang, Guangbin and Wang, Guangbin and Zhuo, Zhi-Zheng and Ye, Chuyang and Liu, Yaou,
-  year={2025},
-  journal={SSRN Electronic Journal},
-  url={[http://dx.doi.org/10.2139/ssrn.5552565]}
-}
-```
 
 ## License
 This project is licensed under the [MIT License](LICENSE.txt).
