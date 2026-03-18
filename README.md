@@ -55,7 +55,7 @@ git clone https://https://github.com/XmHongBIT/MRI-GNP.git
 cd MRI-GNP
 
 # Install dependencies
-python setup.py
+pip install -e .
 
 ```
 ## How to Contribute
