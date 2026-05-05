@@ -1,0 +1,6 @@
+numpy
+pyyaml
+scikit-learn
+torch
+torchvision
+transformers

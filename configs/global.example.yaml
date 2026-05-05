@@ -1,0 +1,8 @@
+seed: 42
+run_on_which_gpu: 0
+output_root_dir: ./outputs
+num_workers: 4
+pin_memory: true
+use_amp: true
+save_predictions: true
+save_relation_summary: true

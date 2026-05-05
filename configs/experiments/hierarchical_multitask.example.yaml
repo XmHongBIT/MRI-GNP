@@ -1,0 +1,141 @@
+name: hierarchical_multitask_demo
+manifest_path: ../../templates/manifest_template.csv
+
+sample_path_column: sample_path
+split_column: split
+train_split: train
+val_split: val
+test_split: test
+subject_name_column: subject_name
+data_source_column: data_source
+image_key: image
+meta_key: meta
+
+enable_train_image_augmentation: true
+num_epochs: 20
+batch_size: 16
+train_sampling_strategy: weighted_sampler
+validate_every_n_epochs: 1
+checkpoint_every_n_epochs: 1
+
+optimizer:
+  lr: 4.0e-5
+  weight_decay: 1.0e-4
+
+model:
+  backbone: vit
+  image_size: 224
+  patch_size: 32
+  hidden_size: 768
+  num_hidden_layers: 12
+  num_attention_heads: 12
+  intermediate_size: 3072
+  hidden_dropout_prob: 0.0
+  attention_probs_dropout_prob: 0.0
+  shared_backbone_layers: 6
+  task_hidden_dim: 256
+  pretrained_source: ""
+
+relation:
+  enabled: true
+  num_layers: 2
+  num_heads: 4
+  dropout: 0.1
+  ffn_mult: 2.0
+  use_branch_embeddings: true
+  residual_scale_init: 0.1
+
+hierarchy:
+  root_task: IDH
+  branches:
+    - name: oligo
+      tasks: [1p19q, ATRX, TERT]
+      include_root: true
+    - name: astro
+      tasks: [ATRX, TP53, CDKN]
+      include_root: true
+    - name: gbm
+      tasks: [TERT, EGFR, +7-10]
+      include_root: true
+
+tasks:
+  - name: IDH
+    label_column: IDH
+    output_classes: [yes, no]
+    output_classes_mapping:
+      yes: [yes]
+      no: [no]
+    loss_type: ce
+    task_weight: 1.0
+
+  - name: 1p19q
+    label_column: 1p19q
+    output_classes: [yes, no]
+    output_classes_mapping:
+      yes: [yes]
+      no: [no]
+    loss_type: ce
+    task_weight: 1.0
+
+  - name: CDKN
+    label_column: CDKN
+    output_classes: [yes, no]
+    output_classes_mapping:
+      yes: [yes]
+      no: [no]
+    loss_type: ce
+    task_weight: 1.0
+
+  - name: +7-10
+    label_column: plus7minus10
+    output_classes: [yes, no]
+    output_classes_mapping:
+      yes: [yes]
+      no: [no]
+    loss_type: ce
+    task_weight: 1.0
+
+  - name: TERT
+    label_column: TERT
+    output_classes: [yes, no]
+    output_classes_mapping:
+      yes: [yes]
+      no: [no]
+    loss_type: ce
+    task_weight: 1.0
+
+  - name: EGFR
+    label_column: EGFR
+    output_classes: [yes, no]
+    output_classes_mapping:
+      yes: [yes]
+      no: [no]
+    loss_type: ce
+    task_weight: 1.0
+
+  - name: MGMT
+    label_column: MGMT
+    output_classes: [yes, no]
+    output_classes_mapping:
+      yes: [yes]
+      no: [no]
+    loss_type: ce
+    task_weight: 1.0
+
+  - name: ATRX
+    label_column: ATRX
+    output_classes: [yes, no]
+    output_classes_mapping:
+      yes: [yes]
+      no: [no]
+    loss_type: ce
+    task_weight: 1.0
+
+  - name: TP53
+    label_column: TP53
+    output_classes: [yes, no]
+    output_classes_mapping:
+      yes: [yes]
+      no: [no]
+    loss_type: ce
+    task_weight: 1.0
