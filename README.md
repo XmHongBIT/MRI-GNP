@@ -1,6 +1,6 @@
 # MRI-GNP
 
-MRI-GNP is a cleaned and GitHub-ready training core extracted from a larger internal research workspace. This repository keeps the hierarchical multitask MRI training logic while removing private project structure, legacy experiment clutter, and dataset-specific preprocessing code that should not be pushed publicly.
+
 
 ## What is included
 
