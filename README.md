@@ -117,13 +117,3 @@ Each run writes results to the configured output directory, including:
 
 This repository is intended as a research training framework, not a full end-to-end medical product. It does not include raw data preprocessing, institution-specific split rules, or clinical deployment logic.
 
-## Release Notes
-
-Before publishing a public repository or model weights, it is still a good idea to:
-
-- add a real open-source license
-- include a citation entry if this supports a paper or preprint
-- provide a model card if checkpoints are released
-- confirm that no sensitive sample metadata is present in manifests or outputs
-
-See [docs/release_checklist.md](docs/release_checklist.md) for a short checklist.
