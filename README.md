@@ -1,74 +1,69 @@
 # MRI-GNP
 
+MRI-GNP is a lightweight research codebase for hierarchical multitask learning on brain MRI. It is designed for molecular and genomic prediction from preprocessed MRI slices, with support for partially labeled cohorts, task-specific heads, and cross-task relation modeling.
 
+This public release focuses on the training core: model definition, multitask optimization, configuration, and reproducible experiment structure.
 
-## What is included
+## Highlights
 
-- A compact hierarchical multitask trainer centered on the original `909_hierarchical_multitask_train_vit.py` idea
-- A ViT-first training path with fallback backbones when ViT dependencies are unavailable
-- Task-masked multitask learning for partially labeled cohorts
-- Hierarchical relation routing with an IDH-rooted branch design
-- YAML-based configs instead of `eval`-style experiment files
-- Minimal templates for manifest and experiment configuration
+- Hierarchical multitask classifier with an IDH-rooted relation graph
+- ViT-first image backbone with fallback CNN backbones
+- Joint learning from imaging features and optional tabular metadata
+- Native support for incomplete multitask labels through task masking
+- YAML-based experiment configuration for cleaner reproducibility
+- Simple manifest-driven data interface for public or private datasets
 
-## What is intentionally not included
-
-- Private raw MRI preprocessing pipelines
-- Internal Excel databases and split rules
-- Historical experiment outputs, caches, and notebooks
-- Institution-specific path conventions
-
-## Repository layout
+## Repository Layout
 
 ```text
 main/
-├─ train.py
-├─ mri_gnp/
-│  ├─ config.py
-│  ├─ data.py
-│  ├─ metrics.py
-│  ├─ model.py
-│  ├─ trainer.py
-│  └─ utils.py
-├─ configs/
-│  ├─ global.example.yaml
-│  └─ experiments/
-│     └─ hierarchical_multitask.example.yaml
-├─ templates/
-│  └─ manifest_template.csv
-├─ docs/
-│  ├─ data_format.md
-│  └─ release_checklist.md
-└─ requirements.txt
+|-- train.py
+|-- mri_gnp/
+|   |-- __init__.py
+|   |-- config.py
+|   |-- data.py
+|   |-- metrics.py
+|   |-- model.py
+|   |-- trainer.py
+|   `-- utils.py
+|-- configs/
+|   |-- global.example.yaml
+|   `-- experiments/
+|       `-- hierarchical_multitask.example.yaml
+|-- templates/
+|   `-- manifest_template.csv
+|-- docs/
+|   |-- data_format.md
+|   `-- release_checklist.md
+|-- requirements.txt
+`-- .gitignore
 ```
 
-## Data interface
+## Data Format
 
-The public version trains from prepared `.npz` samples instead of raw hospital data tables.
+The trainer expects preprocessed `.npz` files rather than raw clinical spreadsheets or full hospital pipelines.
 
-Each `.npz` sample should contain:
+Each sample file should contain:
 
 - `image`: `float32`, shape `[C, H, W]`
 - `meta`: optional `float32`, shape `[M]`
 
-The manifest is a CSV file that points to sample files and provides split labels plus task labels. See [docs/data_format.md](docs/data_format.md).
+The manifest is a CSV file with sample paths, split assignment, and task labels. A blank template is provided in [templates/manifest_template.csv](templates/manifest_template.csv), and the full format is described in [docs/data_format.md](docs/data_format.md).
 
-## Quick start
+## Quick Start
 
-1. Install dependencies.
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-2. Duplicate the example configs and fill in your own paths.
+Create your runtime configs from the templates:
 
 - `configs/global.example.yaml` -> `configs/global.yaml`
 - `configs/experiments/hierarchical_multitask.example.yaml` -> `configs/experiments/run.yaml`
 
-3. Prepare your manifest CSV and `.npz` samples.
-
-4. Run a dry check before full training.
+Run a dry check before training:
 
 ```bash
 python train.py \
@@ -77,7 +72,7 @@ python train.py \
   --dry-run
 ```
 
-5. Start training.
+Launch training:
 
 ```bash
 python train.py \
@@ -85,29 +80,39 @@ python train.py \
   --experiment-config configs/experiments/run.yaml
 ```
 
-## Core training design
+## Training Design
 
-The trainer keeps the key ideas from the original internal script:
+MRI-GNP keeps the core modeling ideas of the original hierarchical multitask pipeline while presenting them in a cleaner public structure:
 
-- Shared image backbone plus task-specific heads
-- Task-specific fusion of image features and structured metadata
-- Hierarchical relation routing between root and branch tasks
-- Label masking so tasks can train on incomplete annotation matrices
-- Weighted sampling to reduce imbalance across multitask labels
+- A shared image encoder produces base visual representations
+- Optional metadata is fused with image features before task heads
+- Each task has its own neck and prediction head
+- A hierarchical router refines task embeddings through branch-aware relation blocks
+- Loss is computed only where labels are present, enabling mixed-annotation cohorts
+
+The default example uses a hierarchy centered on `IDH`, with optional downstream branches such as oligodendroglial, astrocytic, and GBM-related tasks.
 
 ## Outputs
 
-For each run, the trainer writes:
+Each run writes results to the configured output directory, including:
 
-- latest and best checkpoints
+- latest and best model checkpoints
 - training history and final metrics
-- optional per-task prediction CSV files for validation and test sets
-- a relation summary JSON describing branch structure and learned residual scales
-- snapshots of the resolved configs used for the run
+- per-task validation or test prediction CSV files
+- relation summary JSON for the hierarchical routing module
+- resolved config snapshots for experiment tracking
 
-## Notes for public release
+## Scope
 
-- This repository is a training core, not a full medical data pipeline.
-- Add a real license before publishing.
-- If you release checkpoints, add a model card and dataset usage statement.
-- Review [docs/release_checklist.md](docs/release_checklist.md) before the first GitHub push.
+This repository is intended as a research training framework, not a full end-to-end medical product. It does not include raw data preprocessing, institutional split rules, or clinical deployment logic.
+
+## Release Notes
+
+Before publishing a public repository or model weights, it is still a good idea to:
+
+- add a real open-source license
+- include a citation entry if this supports a paper or preprint
+- provide a model card if checkpoints are released
+- confirm that no sensitive sample metadata is present in manifests or outputs
+
+See [docs/release_checklist.md](docs/release_checklist.md) for a short checklist.
