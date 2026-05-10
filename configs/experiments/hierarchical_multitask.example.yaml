@@ -52,10 +52,13 @@ hierarchy:
       tasks: [1p19q, ATRX, TERT]
       include_root: true
     - name: astro
-      tasks: [ATRX, TP53, CDKN]
+      tasks: [1p19q, ATRX, TP53, CDKN]
       include_root: true
     - name: gbm
-      tasks: [TERT, EGFR, +7-10]
+      tasks: [ATRX, CDKN, TERT, TP53, EGFR, +7-10]
+      include_root: true
+      - name: histo
+      tasks: [WHO2, WHO3, Ki67]
       include_root: true
 
 tasks:
@@ -138,4 +141,41 @@ tasks:
       yes: [yes]
       no: [no]
     loss_type: ce
+    task_weight: 1.0
+
+  - name: Ki67
+    label_column: Ki67
+    output_classes: [yes, no]
+    output_classes_mapping:
+      yes: [yes]
+      no: [no]
+    loss_type: ce
+    task_weight: 1.0
+
+  - name: WHO2
+    label_column: WHO2
+    output_classes: [yes, no]
+    output_classes_mapping:
+      yes: ['2', '3']
+      no: '4'
+    loss_type: ce
+    task_weight: 1.0
+
+  - name: WHO23
+    label_column: WHO23
+    output_classes: [yes, no]
+    output_classes_mapping:
+      yes: '3'
+      no: '2'
+    loss_type: ce
+    task_weight: 1.0
+
+  - name: WHO3
+    label_column: WHO3
+    output_classes: ['2', '3', '4']
+    output_classes_mapping:
+      '2': '2'
+      '3': '3'
+      '4': '4'
+    loss_type: ordinal
     task_weight: 1.0
