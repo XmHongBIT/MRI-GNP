@@ -155,18 +155,9 @@ tasks:
   - name: WHO2
     label_column: WHO2
     output_classes: [yes, no]
-    output_classes_mapping:
-      yes: ['2', '3']
-      no: '4'
-    loss_type: ce
-    task_weight: 1.0
-
-  - name: WHO23
-    label_column: WHO23
-    output_classes: [yes, no]
-    output_classes_mapping:
-      yes: '3'
-      no: '2'
+    output_classes_mapping:  
+      yes: '4'
+      no: ['2', '3']
     loss_type: ce
     task_weight: 1.0
 
