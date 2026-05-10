@@ -57,7 +57,7 @@ hierarchy:
     - name: gbm
       tasks: [ATRX, CDKN, TERT, TP53, EGFR, +7-10]
       include_root: true
-      - name: histo
+    - name: histo
       tasks: [WHO2, WHO3, Ki67]
       include_root: true
 
