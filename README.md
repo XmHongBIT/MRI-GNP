@@ -57,6 +57,12 @@ Each sample file should contain:
 
 The manifest is a CSV file with sample paths, split assignment, and task labels. A blank template is provided in [templates/manifest_template.csv](templates/manifest_template.csv), and the full format is described in [docs/data_format.md](docs/data_format.md).
 
+## Beijing Tiantan Hospital Test-Set Access
+
+A de-identified subset of the Beijing Tiantan Hospital test-set imaging data and corresponding labels may be made available to qualified researchers, subject to institutional review and approval and completion of any required data-use agreement.
+
+Access application: **[Link to be added]**
+
 ## Quick Start
 
 Install dependencies:
