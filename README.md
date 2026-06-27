@@ -59,7 +59,7 @@ The manifest is a CSV file with sample paths, split assignment, and task labels.
 
 ## Beijing Tiantan Hospital Test-Set Access
 
-A de-identified subset of the Beijing Tiantan Hospital test-set imaging data and corresponding labels may be made available to qualified researchers, subject to institutional review and approval and completion of any required data-use agreement.
+A de-identified subset of the Beijing Tiantan Hospital test-set imaging data and corresponding labels now can be made available to qualified researchers, subject to institutional review and approval and completion of any required data-use agreement.
 
 Access application: **[Link to be added]**
 
