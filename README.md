@@ -59,8 +59,8 @@ This repository contains the code and reproducibility materials accompanying the
 
 | Access | File | Contents |
 |:------:|:-----|:---------|
-| Controlled | [`templates/BJTTH_data_access_request_template.docx`](data/application_templates/BJTTH_data_access_request_template.docx) | Request form for the Beijing Tiantan Hospital test-set data |
-| Open | [`data/external_test_sets/external_test_metadata_predictions.csv`](data/external_test_sets_predictions/MRI-GNP_EXTENED_TEST_SET_METADATA.csv) | Metadata, labels, data splits, and model predictions for the external test sets |
+| Controlled | [`data/application_templates/BJTTH_data_access_request_template.docx`](data/application_templates/BJTTH_data_access_request_template.docx) | Request form for the Beijing Tiantan Hospital test-set data |
+| Open | [`data/external_test_sets_predictions/MRI-GNP_EXTENED_TEST_SET_METADATA.csv`](data/external_test_sets_predictions/MRI-GNP_EXTENED_TEST_SET_METADATA.csv) | Metadata, labels, data splits, and model predictions for the external test sets |
 
 ---
 
