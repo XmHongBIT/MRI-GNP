@@ -9,6 +9,7 @@ This public release contains the core training framework used for the MRI-based 
 Adult-type diffuse glioma requires integrated histological and molecular characterization for diagnosis, grading, and treatment planning. MRI-GNP is built around the idea that routine preoperative MRI can support this process through a unified deep learning model rather than a collection of isolated single-marker predictors.
 
 MRI-GNP was developed and evaluated on a large multicenter cohort comprising 35,500 MR images from 8,875 patients across 22 datasets in three countries. The study focuses on predicting multiple neuropathology-related targets from MRI, including tasks such as IDH mutation, 1p/19q codeletion, CDKN2A/B homozygous deletion, +7/-10 alteration, TERT promoter mutation, EGFR amplification, ATRX mutation, TP53 mutation, MGMT promoter methylation, Ki-67 expression, and WHO-related grading tasks.
+<img width="935" height="685" alt="image" src="https://github.com/user-attachments/assets/44100097-0768-495b-920a-19e476276ac5" />
 
 ## Repository Layout
 
