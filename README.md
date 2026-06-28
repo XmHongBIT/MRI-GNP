@@ -8,7 +8,7 @@ This public release contains the core training framework used for the MRI-based 
 
 Adult-type diffuse glioma requires integrated histological and molecular characterization for diagnosis, grading, and treatment planning. MRI-GNP is built around the idea that routine preoperative MRI can support this process through a unified deep learning model rather than a collection of isolated single-marker predictors.
 
-In the accompanying manuscript, MRI-GNP was developed and evaluated on a large multicenter cohort comprising 35,500 MR images from 8,875 patients across 22 datasets in three countries. The study focuses on predicting multiple neuropathology-related targets from MRI, including tasks such as IDH mutation, 1p/19q codeletion, CDKN2A/B homozygous deletion, +7/-10 alteration, TERT promoter mutation, EGFR amplification, ATRX mutation, TP53 mutation, MGMT promoter methylation, Ki-67 expression, and WHO-related grading tasks.
+MRI-GNP was developed and evaluated on a large multicenter cohort comprising 35,500 MR images from 8,875 patients across 22 datasets in three countries. The study focuses on predicting multiple neuropathology-related targets from MRI, including tasks such as IDH mutation, 1p/19q codeletion, CDKN2A/B homozygous deletion, +7/-10 alteration, TERT promoter mutation, EGFR amplification, ATRX mutation, TP53 mutation, MGMT promoter methylation, Ki-67 expression, and WHO-related grading tasks.
 
 ## Repository Layout
 
@@ -95,9 +95,6 @@ MRI-GNP keeps the core modeling ideas of the original hierarchical multitask pip
 
 The default example uses a hierarchy centered on `IDH`, with optional downstream branches such as oligodendroglial, astrocytic, and GBM-related tasks.
 
-## Study Context
-
-The manuscript frames MRI-GNP as a practical and generalizable system for preoperative neuropathology prediction in adult-type diffuse glioma. The full study also evaluates broader clinical use cases, including neuroradiologist assistance and robustness analysis under missing T1CE conditions. This repository focuses on the hierarchical multitask training core that underpins those experiments.
 
 ## Outputs
 
