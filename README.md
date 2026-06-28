@@ -51,11 +51,38 @@ Each sample file should contain:
 
 The manifest is a CSV file with sample paths, split assignment, and task labels. A blank template is provided in [templates/manifest_template.csv](templates/manifest_template.csv), and the full format is described in [docs/data_format.md](docs/data_format.md).
 
-## Beijing Tiantan Hospital Test-Set Access
+## Data availability and reproducibility materials
 
-A de-identified subset of the Beijing Tiantan Hospital test-set imaging data and corresponding labels now is available to qualified researchers, subject to institutional review and approval and completion of any required data-use agreement.
+This repository provides the code and reproducibility materials for the MRI-GNP study.
 
-Access application: **updating**
+1. Controlled access to Beijing Tiantan Hospital test-set data
+
+The de-identified Beijing Tiantan Hospital test-set imaging data and corresponding labels will be available through controlled access, subject to institutional approval and data-use requirements.
+
+Researchers who wish to request access should submit the following materials:
+
+a completed data access request form: templates/BJTTH_data_access_request_template.docx
+a brief research proposal describing the intended non-commercial research or reproducibility purpose
+documentation of institutional ethics approval or exemption, where applicable
+a signed data-use agreement
+
+Requests should be sent to the corresponding author:
+
+Yaou Liu
+Email: liuyaou@bjtth.org
+
+Access will be considered for qualified researchers for non-commercial research and reproducibility purposes after review of the proposal and institutional data-governance requirements.
+
+2. External test-set metadata, labels, splits, and prediction outputs
+
+Raw imaging data from private external datasets cannot be publicly released because of patient privacy, institutional data-use agreements, and local ethics restrictions.
+
+To support reproducibility, we provide a de-identified CSV file containing metadata, labels, data split information, and model prediction outputs for the external test sets:
+
+data/external_test_sets/external_test_metadata_predictions.csv
+
+This file can be used to reproduce the reported external validation summaries, including centre-level and task-level performance calculations.
+
 
 ## Quick Start
 
