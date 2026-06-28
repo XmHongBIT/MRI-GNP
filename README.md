@@ -32,6 +32,8 @@ main/
 |-- docs/
 |   |-- data_format.md
 |   `-- release_checklist.md
+|-- metadata/
+|   |-- data.csv
 |-- requirements.txt
 `-- .gitignore
 ```
