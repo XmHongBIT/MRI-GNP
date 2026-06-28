@@ -1,4 +1,4 @@
-# MRI-GNP
+# MRI-based deep learning system for noninvasive neuropathological profiling of adult-type diffuse glioma
 
 MRI-GNP is a lightweight research codebase for hierarchical multitask learning on brain MRI. It is designed for noninvasive neuropathological profiling of adult-type diffuse glioma from preoperative MRI, with support for partially labeled cohorts, task-specific heads, and cross-task relation modeling.
 
