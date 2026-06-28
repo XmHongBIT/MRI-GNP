@@ -8,17 +8,7 @@ This public release contains the core training framework used for the MRI-based 
 
 Adult-type diffuse glioma requires integrated histological and molecular characterization for diagnosis, grading, and treatment planning. MRI-GNP is built around the idea that routine preoperative MRI can support this process through a unified deep learning model rather than a collection of isolated single-marker predictors.
 
-In the accompanying manuscript, MRI-GNP was developed and evaluated on a large multicenter cohort comprising 35,616 MR images from 8,844 patients across 22 datasets in three countries. The study focuses on predicting multiple neuropathology-related targets from MRI, including tasks such as IDH mutation, 1p/19q codeletion, CDKN2A/B homozygous deletion, +7/-10 alteration, TERT promoter mutation, EGFR amplification, ATRX mutation, TP53 mutation, MGMT promoter methylation, Ki-67 expression, and WHO-related grading tasks.
-
-## Highlights
-
-- Hierarchical multitask classifier with an IDH-rooted relation graph
-- ViT-first image backbone with fallback CNN backbones
-- Joint learning from imaging features and optional tabular metadata
-- Native support for incomplete multitask labels through task masking
-- YAML-based experiment configuration for cleaner reproducibility
-- Simple manifest-driven data interface for public or private datasets
-- Public code structure aligned with the MRI-GNP manuscript rather than an internal lab workspace
+In the accompanying manuscript, MRI-GNP was developed and evaluated on a large multicenter cohort comprising 35,500 MR images from 8,875 patients across 22 datasets in three countries. The study focuses on predicting multiple neuropathology-related targets from MRI, including tasks such as IDH mutation, 1p/19q codeletion, CDKN2A/B homozygous deletion, +7/-10 alteration, TERT promoter mutation, EGFR amplification, ATRX mutation, TP53 mutation, MGMT promoter methylation, Ki-67 expression, and WHO-related grading tasks.
 
 ## Repository Layout
 
@@ -123,3 +113,11 @@ Each run writes results to the configured output directory, including:
 
 This repository is intended as a research training framework, not a full end-to-end medical product. It does not include raw data preprocessing, institution-specific split rules, or clinical deployment logic.
 
+
+## Citation
+
+If you use this code, please cite:
+
+```bash
+updating
+```
