@@ -53,35 +53,40 @@ The manifest is a CSV file with sample paths, split assignment, and task labels.
 
 ## Data availability and reproducibility materials
 
-This repository provides the code and reproducibility materials for the MRI-GNP study.
+This repository contains the code and reproducibility materials accompanying the MRI-GNP study. Materials are released under two access regimes, summarised below.
 
-1. Controlled access to Beijing Tiantan Hospital test-set data
+### Key files
 
-The de-identified Beijing Tiantan Hospital test-set imaging data and corresponding labels will be available through controlled access, subject to institutional approval and data-use requirements.
+| Access | File | Contents |
+|:------:|:-----|:---------|
+| Controlled | [`templates/BJTTH_data_access_request_template.docx`](templates/BJTTH_data_access_request_template.docx) | Request form for the Beijing Tiantan Hospital test-set data |
+| Open | [`data/external_test_sets/external_test_metadata_predictions.csv`](data/external_test_sets/external_test_metadata_predictions.csv) | Metadata, labels, data splits, and model predictions for the external test sets |
 
-Researchers who wish to request access should submit the following materials:
+---
 
-a completed data access request form: templates/BJTTH_data_access_request_template.docx
-a brief research proposal describing the intended non-commercial research or reproducibility purpose
-documentation of institutional ethics approval or exemption, where applicable
-a signed data-use agreement
+### 1. Controlled access — Beijing Tiantan Hospital test set
 
-Requests should be sent to the corresponding author:
+The de-identified Beijing Tiantan Hospital test-set imaging data and corresponding labels are released under controlled access, subject to institutional approval and data-use requirements. Researchers wishing to request access should submit:
 
-Yaou Liu
-Email: liuyaou@bjtth.org
+- a completed [data access request form](templates/BJTTH_data_access_request_template.docx);
+- a brief research proposal describing the intended non-commercial research or reproducibility purpose;
+- documentation of institutional ethics approval or exemption, where applicable;
+- a signed data-use agreement.
 
-Access will be considered for qualified researchers for non-commercial research and reproducibility purposes after review of the proposal and institutional data-governance requirements.
+Requests should be directed to the corresponding author:
 
-2. External test-set metadata, labels, splits, and prediction outputs
+> **Yaou Liu**
+> ✉️ [liuyaou@bjtth.org](mailto:liuyaou@bjtth.org)
 
-Raw imaging data from private external datasets cannot be publicly released because of patient privacy, institutional data-use agreements, and local ethics restrictions.
+Access will be granted to qualified researchers for non-commercial research and reproducibility purposes, contingent on review of the proposal and the institutional data-governance requirements of Beijing Tiantan Hospital.
 
-To support reproducibility, we provide a de-identified CSV file containing metadata, labels, data split information, and model prediction outputs for the external test sets:
+### 2. Open access — External test-set metadata, labels, splits, and predictions
 
-data/external_test_sets/external_test_metadata_predictions.csv
+Raw imaging data from the private external datasets cannot be publicly released owing to patient privacy, institutional data-use agreements, and local ethics restrictions. To support independent verification of the reported results, we provide a de-identified CSV file:
 
-This file can be used to reproduce the reported external validation summaries, including centre-level and task-level performance calculations.
+[`data/external_test_sets/external_test_metadata_predictions.csv`](data/external_test_sets/external_test_metadata_predictions.csv)
+
+This file supports reproduction of the reported external validation summaries, including centre-level and task-level performance calculations.
 
 
 ## Quick Start
