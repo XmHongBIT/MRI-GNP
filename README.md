@@ -59,34 +59,17 @@ This repository contains the code and reproducibility materials accompanying the
 
 | Access | File | Contents |
 |:------:|:-----|:---------|
-| Controlled | [`data/application_templates/BJTTH_data_access_request_template.docx`](data/application_templates/BJTTH_data_access_request_template.docx) | Request form for the Beijing Tiantan Hospital test-set data |
-| Open | [`data/external_test_sets_predictions/MRI-GNP_EXTENED_TEST_SET_METADATA.csv`](data/external_test_sets_predictions/MRI-GNP_EXTENED_TEST_SET_METADATA.csv) | Metadata, labels, data splits, and model predictions for the external test sets |
+| Open | [`data/example_test_sets_predictions/MRI-GNP_TEST_SET_METADATA.csv`](data/example_test_sets_predictions/MRI-GNP_TEST_SET_METADATA.csv) | Metadata, labels, data splits, and model predictions for the external test sets |
 
 ---
 
-### 1. Controlled access — Beijing Tiantan Hospital test set
+### Open access — External test-set metadata, labels, splits, and predictions
 
-The de-identified Beijing Tiantan Hospital test-set imaging data and corresponding labels are released under controlled access, subject to institutional approval and data-use requirements. Researchers wishing to request access should submit:
+Raw imaging data from the private datasets cannot be publicly released owing to patient privacy, institutional data-use agreements, and local ethics restrictions. To support independent verification of the reported results, we provide a de-identified CSV file:
 
-- a completed [data access request form](data/application_templates/BJTTH_data_access_request_template.docx);
-- a brief research proposal describing the intended non-commercial research or reproducibility purpose;
-- documentation of institutional ethics approval or exemption, where applicable;
-- a signed data-use agreement.
+[`data/example_test_sets_predictions/MRI-GNP_TEST_SET_METADATA.csv`](data/example_test_sets_predictions/MRI-GNP_TEST_SET_METADATA.csv)
 
-Requests should be directed to the corresponding author:
-
-> **Yaou Liu**
-> ✉️ [liuyaou@bjtth.org](mailto:liuyaou@bjtth.org)
-
-Access will be granted to qualified researchers for non-commercial research and reproducibility purposes, contingent on review of the proposal and the institutional data-governance requirements of Beijing Tiantan Hospital.
-
-### 2. Open access — External test-set metadata, labels, splits, and predictions
-
-Raw imaging data from the private external datasets cannot be publicly released owing to patient privacy, institutional data-use agreements, and local ethics restrictions. To support independent verification of the reported results, we provide a de-identified CSV file:
-
-[`data/external_test_sets/external_test_metadata_predictions.csv`](data/external_test_sets_predictions/MRI-GNP_EXTENED_TEST_SET_METADATA.csv)
-
-This file supports reproduction of the reported external validation summaries, including centre-level and task-level performance calculations.
+This file supports reproduction of the reported validation summaries, including centre-level and task-level performance calculations.
 
 
 ## Quick Start
