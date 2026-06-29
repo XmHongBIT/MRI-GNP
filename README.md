@@ -63,7 +63,7 @@ This repository contains the code and reproducibility materials accompanying the
 
 ---
 
-### Open access — External test-set metadata, labels, splits, and predictions
+### Open access — Test-set metadata, labels, splits, and predictions
 
 Raw imaging data from the private datasets cannot be publicly released owing to patient privacy, institutional data-use agreements, and local ethics restrictions. To support independent verification of the reported results, we provide a de-identified CSV file:
 
