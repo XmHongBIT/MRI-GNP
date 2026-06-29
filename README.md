@@ -53,7 +53,7 @@ The manifest is a CSV file with sample paths, split assignment, and task labels.
 
 ## Data availability and reproducibility materials
 
-This repository contains the code and reproducibility materials accompanying the MRI-GNP study. Materials are released under two access regimes, summarised below.
+This repository contains the code and reproducibility materials accompanying the MRI-GNP study. 
 
 ### Key files
 
