@@ -53,26 +53,9 @@ Each sample file should contain:
 
 The manifest is a CSV file with sample paths, split assignment, and task labels. A blank template is provided in [templates/manifest_template.csv](templates/manifest_template.csv), and the full format is described in [docs/data_format.md](docs/data_format.md).
 
-## Data availability and reproducibility materials
-
-This repository contains the code and reproducibility materials accompanying the MRI-GNP study. 
-
-### Key files
-
-| Access | File | Contents |
-|:------:|:-----|:---------|
-| Open | [`data/example_test_sets_predictions/MRI-GNP_TEST_SET_METADATA.csv`](data/example_test_sets_predictions/MRI-GNP_TEST_SET_METADATA.csv) | Metadata, labels, data splits, and model predictions for the external test sets |
-
----
-
-### Open access — Test-set metadata, labels, splits, and predictions
-
 Raw imaging data from the private datasets cannot be publicly released owing to patient privacy, institutional data-use agreements, and local ethics restrictions. To support independent verification of the reported results, we provide a de-identified CSV file:
 
 [`data/example_test_sets_predictions/MRI-GNP_TEST_SET_METADATA.csv`](data/example_test_sets_predictions/MRI-GNP_TEST_SET_METADATA.csv)
-
-This file supports reproduction of the reported validation summaries, including centre-level and task-level performance calculations.
-
 
 ## Quick Start
 
