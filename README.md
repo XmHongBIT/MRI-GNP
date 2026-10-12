@@ -110,11 +110,6 @@ Each run writes results to the configured output directory, including:
 - relation summary JSON for the hierarchical routing module
 - resolved config snapshots for experiment tracking
 
-## Scope
-
-This repository is intended as a research training framework, not a full end-to-end medical product. It does not include raw data preprocessing, institution-specific split rules, or clinical deployment logic.
-
-
 ## Citation
 
 If you use this code, please cite:
