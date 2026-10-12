@@ -1,6 +1,6 @@
 # MRI-based deep learning system for noninvasive neuropathological profiling of adult-type diffuse glioma
 
-We are delighted to have received an acceptance from *The Lancet Digital Health*.
+We are delighted that our paper has been accepted by *The Lancet Digital Health*.
 
 MRI-GNP is a lightweight research codebase for hierarchical multitask learning on brain MRI. It is designed for noninvasive neuropathological profiling of adult-type diffuse glioma from preoperative MRI, with support for partially labeled cohorts, task-specific heads, and cross-task relation modeling.
 
